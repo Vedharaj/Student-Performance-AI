@@ -1,8 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
+import NeonCircuitBackground from '../components/NeonCircuitBackground';
 
 export default function HomeScreen({ navigation }) {
   return (
+    <>
+    <NeonCircuitBackground />
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Welcome</Text>
@@ -19,13 +22,17 @@ export default function HomeScreen({ navigation }) {
         </Pressable>
       </View>
     </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    // backgroundColor: 'rgba(255, 255, 255, 0.95)',                                                               
+
+
+    
     padding: 24,
     justifyContent: 'center',
   },
